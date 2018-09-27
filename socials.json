@@ -1,0 +1,38 @@
+  [
+    {  
+      "name": "Youtube",
+      "image" : "btn_youtube.png"
+    },
+    {  
+      "name": "Apple Music",
+      "image" : "btn_apple_music.png"
+    },
+    {  
+      "name": "Bandcamp",
+      "image" : "btn_bandcamp.png"
+    },
+    {  
+      "name": "Facebook",
+      "image" : "btn_facebook.png"
+    },
+    {  
+      "name": "Google Play",
+      "image" : "btn_google_play.png"
+    },
+    {  
+      "name": "Itunes",
+      "image" : "btn_itunes.png"
+    },
+    {  
+      "name": "Soundcloud",
+      "image" : "btn_soundcloud.png"
+    },
+    {  
+      "name": "Spotify",
+      "image" : "btn_spotify.png"
+    },
+    {  
+      "name": "Twitter",
+      "image" : "btn_twitter.png"
+    }
+  ]

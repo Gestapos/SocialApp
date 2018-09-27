@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		793A6609FA1D51A78D883977 /* Pods_SocialApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DE5789745E9AE9F2DAF056 /* Pods_SocialApp.framework */; };
+		A8316EA1215B9288008F009F /* socials.json in Resources */ = {isa = PBXBuildFile; fileRef = A8316EA0215B9288008F009F /* socials.json */; };
+		A8316EA6215B9347008F009F /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8316EA5215B9347008F009F /* CollectionViewController.swift */; };
+		A8316EA8215B9359008F009F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8316EA7215B9359008F009F /* CollectionViewCell.swift */; };
 		A842225C21562B9D004935E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A842225B21562B9D004935E3 /* AppDelegate.swift */; };
-		A842225E21562B9D004935E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A842225D21562B9D004935E3 /* ViewController.swift */; };
 		A842226121562B9D004935E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A842225F21562B9D004935E3 /* Main.storyboard */; };
 		A842226321562B9E004935E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A842226221562B9E004935E3 /* Assets.xcassets */; };
 		A842226621562B9E004935E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A842226421562B9E004935E3 /* LaunchScreen.storyboard */; };
+		A87D1EDB215BBA1E00BB8335 /* SocialDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87D1EDA215BBA1E00BB8335 /* SocialDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		89DE5789745E9AE9F2DAF056 /* Pods_SocialApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E5F5B984507722B96FE328C /* Pods-SocialApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialApp/Pods-SocialApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A8316EA0215B9288008F009F /* socials.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = socials.json; sourceTree = "<group>"; };
+		A8316EA5215B9347008F009F /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		A8316EA7215B9359008F009F /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		A842225821562B9D004935E3 /* SocialApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SocialApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A842225B21562B9D004935E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A842225D21562B9D004935E3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A842226021562B9D004935E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A842226221562B9E004935E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A842226521562B9E004935E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A842226721562B9E004935E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A87D1EDA215BBA1E00BB8335 /* SocialDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialDetailViewController.swift; sourceTree = "<group>"; };
+		E149A7F0C5FAD82A50D1EE71 /* Pods-SocialApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialApp/Pods-SocialApp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,77 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				793A6609FA1D51A78D883977 /* Pods_SocialApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		898D7C408D9E9C56F02C0C9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E5F5B984507722B96FE328C /* Pods-SocialApp.debug.xcconfig */,
+				E149A7F0C5FAD82A50D1EE71 /* Pods-SocialApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		99CD723D1A4B6CB12F8FED39 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				89DE5789745E9AE9F2DAF056 /* Pods_SocialApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A8316E98215B8FFA008F009F /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				A842226421562B9E004935E3 /* LaunchScreen.storyboard */,
+				A842226721562B9E004935E3 /* Info.plist */,
+			);
+			name = "Supporting files";
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		A8316E99215B9059008F009F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A842225F21562B9D004935E3 /* Main.storyboard */,
+				A842226221562B9E004935E3 /* Assets.xcassets */,
+			);
+			name = View;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		A8316E9A215B9142008F009F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A842225B21562B9D004935E3 /* AppDelegate.swift */,
+				A8316EA5215B9347008F009F /* CollectionViewController.swift */,
+				A87D1EDA215BBA1E00BB8335 /* SocialDetailViewController.swift */,
+				A8316EA2215B92EF008F009F /* Cell */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A8316EA2215B92EF008F009F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A8316EA7215B9359008F009F /* CollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		A842224F21562B9D004935E3 = {
 			isa = PBXGroup;
 			children = (
+				A8316EA0215B9288008F009F /* socials.json */,
 				A842225A21562B9D004935E3 /* SocialApp */,
 				A842225921562B9D004935E3 /* Products */,
+				898D7C408D9E9C56F02C0C9E /* Pods */,
+				99CD723D1A4B6CB12F8FED39 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,12 +124,9 @@
 		A842225A21562B9D004935E3 /* SocialApp */ = {
 			isa = PBXGroup;
 			children = (
-				A842225B21562B9D004935E3 /* AppDelegate.swift */,
-				A842225D21562B9D004935E3 /* ViewController.swift */,
-				A842225F21562B9D004935E3 /* Main.storyboard */,
-				A842226221562B9E004935E3 /* Assets.xcassets */,
-				A842226421562B9E004935E3 /* LaunchScreen.storyboard */,
-				A842226721562B9E004935E3 /* Info.plist */,
+				A8316E9A215B9142008F009F /* Controller */,
+				A8316E99215B9059008F009F /* View */,
+				A8316E98215B8FFA008F009F /* Supporting files */,
 			);
 			path = SocialApp;
 			sourceTree = "<group>";
@@ -71,9 +138,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A842226A21562B9E004935E3 /* Build configuration list for PBXNativeTarget "SocialApp" */;
 			buildPhases = (
+				CE1C92DB1846F6332CAA965C /* [CP] Check Pods Manifest.lock */,
 				A842225421562B9D004935E3 /* Sources */,
 				A842225521562B9D004935E3 /* Frameworks */,
 				A842225621562B9D004935E3 /* Resources */,
+				78237B6CFF654F03359668A7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,18 +193,68 @@
 			files = (
 				A842226621562B9E004935E3 /* LaunchScreen.storyboard in Resources */,
 				A842226321562B9E004935E3 /* Assets.xcassets in Resources */,
+				A8316EA1215B9288008F009F /* socials.json in Resources */,
 				A842226121562B9D004935E3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		78237B6CFF654F03359668A7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SocialApp/Pods-SocialApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SocialApp/Pods-SocialApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE1C92DB1846F6332CAA965C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SocialApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A842225421562B9D004935E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A842225E21562B9D004935E3 /* ViewController.swift in Sources */,
+				A87D1EDB215BBA1E00BB8335 /* SocialDetailViewController.swift in Sources */,
+				A8316EA6215B9347008F009F /* CollectionViewController.swift in Sources */,
+				A8316EA8215B9359008F009F /* CollectionViewCell.swift in Sources */,
 				A842225C21562B9D004935E3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,11 +399,13 @@
 		};
 		A842226B21562B9E004935E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E5F5B984507722B96FE328C /* Pods-SocialApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UAXCT92K5G;
-				INFOPLIST_FILE = SocialApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SocialApp/New Group/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,17 +413,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Polyakov.SocialApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		A842226C21562B9E004935E3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E149A7F0C5FAD82A50D1EE71 /* Pods-SocialApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UAXCT92K5G;
-				INFOPLIST_FILE = SocialApp/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SocialApp/New Group/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +433,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Polyakov.SocialApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
