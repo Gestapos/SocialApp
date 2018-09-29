@@ -11,9 +11,8 @@ import SwiftyJSON
 
 class CollectionViewController: UICollectionViewController {
 
-    var nameArray = [String]()
-    var imageArray = [String]()
-        
+    var socialsArray = [Social]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,15 +24,16 @@ class CollectionViewController: UICollectionViewController {
     // MARK: UICollectionView methods
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return nameArray.count
+        
+        return socialsArray.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CollectionViewCell
         
-        cell.socialsLabel.text! = nameArray[indexPath.row]
-        cell.socialsImage.image = UIImage(named: imageArray[indexPath.row])
+        cell.socialsLabel.text! = socialsArray[indexPath.row].name
+        cell.socialsImage.image = UIImage(named: socialsArray[indexPath.row].image)
 
         return cell
     }
@@ -42,7 +42,8 @@ class CollectionViewController: UICollectionViewController {
         
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let destinationVC = mainStoryboard.instantiateViewController(withIdentifier: "SocialDetailViewController") as! SocialDetailViewController
-        destinationVC.image =  UIImage(named: imageArray[indexPath.row])!
+        
+        destinationVC.image =  UIImage(named: socialsArray[indexPath.row].image)!
         self.navigationController?.pushViewController(destinationVC, animated: true)
         
     }
@@ -55,11 +56,10 @@ class CollectionViewController: UICollectionViewController {
             let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
             var jsonObj = try JSON(data: data)
             for index in 0...8 {
-                var name = jsonObj[index]["name"].stringValue
-                nameArray.append(name)
-                var image = jsonObj[index]["image"].stringValue
-                imageArray.append(image)
-                
+                let newSocials = Social()
+                newSocials.name = jsonObj[index]["name"].stringValue
+                newSocials.image = jsonObj[index]["image"].stringValue
+                socialsArray.append(newSocials)
             }
         } catch let error {
             print("parse error: \(error.localizedDescription)")

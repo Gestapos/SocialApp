@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		793A6609FA1D51A78D883977 /* Pods_SocialApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 89DE5789745E9AE9F2DAF056 /* Pods_SocialApp.framework */; };
+		A82A2275215FB33800BF3EAE /* Social.swift in Sources */ = {isa = PBXBuildFile; fileRef = A82A2274215FB33800BF3EAE /* Social.swift */; };
 		A8316EA1215B9288008F009F /* socials.json in Resources */ = {isa = PBXBuildFile; fileRef = A8316EA0215B9288008F009F /* socials.json */; };
 		A8316EA6215B9347008F009F /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8316EA5215B9347008F009F /* CollectionViewController.swift */; };
 		A8316EA8215B9359008F009F /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8316EA7215B9359008F009F /* CollectionViewCell.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		89DE5789745E9AE9F2DAF056 /* Pods_SocialApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E5F5B984507722B96FE328C /* Pods-SocialApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SocialApp/Pods-SocialApp.debug.xcconfig"; sourceTree = "<group>"; };
+		A82A2274215FB33800BF3EAE /* Social.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Social.swift; sourceTree = "<group>"; };
 		A8316EA0215B9288008F009F /* socials.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = socials.json; sourceTree = "<group>"; };
 		A8316EA5215B9347008F009F /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		A8316EA7215B9359008F009F /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 				89DE5789745E9AE9F2DAF056 /* Pods_SocialApp.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A82A2276215FB34400BF3EAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A82A2274215FB33800BF3EAE /* Social.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A8316E98215B8FFA008F009F /* Supporting files */ = {
@@ -124,6 +134,7 @@
 		A842225A21562B9D004935E3 /* SocialApp */ = {
 			isa = PBXGroup;
 			children = (
+				A82A2276215FB34400BF3EAE /* Model */,
 				A8316E9A215B9142008F009F /* Controller */,
 				A8316E99215B9059008F009F /* View */,
 				A8316E98215B8FFA008F009F /* Supporting files */,
@@ -254,6 +265,7 @@
 			files = (
 				A87D1EDB215BBA1E00BB8335 /* SocialDetailViewController.swift in Sources */,
 				A8316EA6215B9347008F009F /* CollectionViewController.swift in Sources */,
+				A82A2275215FB33800BF3EAE /* Social.swift in Sources */,
 				A8316EA8215B9359008F009F /* CollectionViewCell.swift in Sources */,
 				A842225C21562B9D004935E3 /* AppDelegate.swift in Sources */,
 			);
