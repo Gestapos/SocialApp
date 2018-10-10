@@ -19,9 +19,8 @@ class CollectionViewController: UICollectionViewController {
         updateSocialsJSON()
         
     }
-
-
-    // MARK: UICollectionView methods
+    
+    // MARK: - UICollectionView methods
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
@@ -41,17 +40,18 @@ class CollectionViewController: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let destinationVC = mainStoryboard.instantiateViewController(withIdentifier: "SocialDetailViewController") as! SocialDetailViewController
+        if let destinationVC = mainStoryboard.instantiateViewController(withIdentifier: "SocialDetailViewController") as? SocialDetailViewController {
         
-        destinationVC.image =  UIImage(named: socialsArray[indexPath.row].image)!
-        self.navigationController?.pushViewController(destinationVC, animated: true)
-        
+            destinationVC.image =  (UIImage(named: socialsArray[indexPath.row].image))!
+            self.navigationController?.pushViewController(destinationVC, animated: true)
+            
+        }
     }
     
     // MARK: UpdateSocialsJSON
     
    func updateSocialsJSON() {
-    if let path = Bundle.main.path(forResource: "socials", ofType: "json") {
+    guard let path = Bundle.main.path(forResource: "socials", ofType: "json") else {fatalError()}
         do {
             let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
             var jsonObj = try JSON(data: data)
@@ -64,9 +64,5 @@ class CollectionViewController: UICollectionViewController {
         } catch let error {
             print("parse error: \(error.localizedDescription)")
         }
-    } else {
-        print("Invalid filename/path.")
-    }
  }
-
 }
