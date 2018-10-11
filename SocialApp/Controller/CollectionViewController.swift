@@ -50,12 +50,13 @@ class CollectionViewController: UICollectionViewController {
     
     // MARK: UpdateSocialsJSON
     
-   func updateSocialsJSON() {
+  private func updateSocialsJSON() {
     guard let path = Bundle.main.path(forResource: "socials", ofType: "json") else {fatalError()}
         do {
             let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .alwaysMapped)
             var jsonObj = try JSON(data: data)
-            for index in 0...8 {
+            let countOfItems = jsonObj.count
+            for index in 0..<countOfItems {
                 let newSocials = Social()
                 newSocials.name = jsonObj[index]["name"].stringValue
                 newSocials.image = jsonObj[index]["image"].stringValue
